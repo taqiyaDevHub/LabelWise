@@ -1,0 +1,13 @@
+# Streamlit Community Cloud uses the requirements.txt closest to the entry
+# point (frontend/app.py), so this one must carry everything LABELWISE_ANALYSIS_MODE=local
+# needs to run the backend pipeline in-process — kept in sync with the root
+# requirements.txt. For a two-service deploy (mode=backend), only the first
+# three lines are actually required by this process.
+streamlit>=1.40
+requests>=2.31
+Pillow>=10.4
+pydantic>=2.9
+pytesseract>=0.3.13
+anthropic>=1.5
+google-genai>=1.0
+httpx>=0.27

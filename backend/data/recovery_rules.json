@@ -1,0 +1,19 @@
+{
+  "_note": "PRD FR-08 / v1.1 §2.9. Category-based only, never exact grams/dollars from a photo (PRD explicit non-goal). Maps classifier.internal_category -> schemas.RecoveryPotential (low | moderate | high | unknown). Categories with valuable recoverable metals/components (PCB, laptops, computer components) score higher; low-material-diversity items (cables, chargers, small appliances) score lower; packaging has no meaningful metal-recovery angle so it's 'unknown' rather than a fabricated 'low'.",
+
+  "category_recovery_map": {
+    "Power Bank": "moderate",
+    "Phone": "moderate",
+    "Laptop": "high",
+    "Charger": "low",
+    "Cable": "low",
+    "PCB": "high",
+    "Monitor": "moderate",
+    "TV": "moderate",
+    "Printer": "low",
+    "Component": "high",
+    "Small Appliance": "low",
+    "Packaging": "unknown",
+    "Battery": "moderate"
+  }
+}

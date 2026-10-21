@@ -1,0 +1,21 @@
+{
+  "_note": "PRD FR-07 / v1.1 §2.10 §2.7 §4 'rules govern safety'. Maps classifier.internal_category -> schemas.DisposalCategory. damage_detected always overrides this map to hazardous_waste regardless of category (PRD v1.1 §2.8: Safety > Disposal > Recovery Value, never reversed) \u2014 enforced in code (disposal_engine.py), not here, so it can never be bypassed by editing this file alone.",
+
+  "category_disposal_map": {
+    "Power Bank": "battery_recycling",
+    "Phone": "e_waste",
+    "Laptop": "e_waste",
+    "Charger": "e_waste",
+    "Cable": "general_recyclable",
+    "PCB": "specialized_recycling",
+    "Monitor": "e_waste",
+    "TV": "e_waste",
+    "Printer": "e_waste",
+    "Component": "specialized_recycling",
+    "Small Appliance": "e_waste",
+    "Packaging": "general_recyclable",
+    "Battery": "battery_recycling"
+  },
+
+  "damage_override_category": "hazardous_waste"
+}

@@ -1,0 +1,128 @@
+{
+  "_note": "PRD FR-05 / v1.1 §2.5. hazard values must match schemas.HazardLevel exactly: low | medium | high | critical | unknown. 'battery_material_default' + 'battery_type_overrides' let a category with a battery report a specific chemistry when OCR detected one (ocr_service.OcrFields.battery_type), and fall back to an honest 'unknown' hazard chemistry when it didn't \u2014 PRD FR-11 / \u00a72.5: never claim a chemistry the label didn't confirm.",
+
+  "categories": {
+    "Power Bank": {
+      "battery_material_default": {"name": "Lithium-ion battery", "hazard": "high"},
+      "battery_type_overrides": {
+        "lithium-ion": {"name": "Lithium-ion battery", "hazard": "high"},
+        "lithium-polymer": {"name": "Lithium-polymer battery", "hazard": "high"},
+        "nimh": {"name": "Nickel-metal hydride battery", "hazard": "medium"},
+        "nicd": {"name": "Nickel-cadmium battery", "hazard": "high"},
+        "lead-acid": {"name": "Lead-acid battery", "hazard": "high"},
+        "alkaline": {"name": "Alkaline battery", "hazard": "low"}
+      },
+      "other_materials": [
+        {"name": "Copper", "hazard": "low"},
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "Phone": {
+      "battery_material_default": {"name": "Lithium-ion battery", "hazard": "high"},
+      "battery_type_overrides": {
+        "lithium-ion": {"name": "Lithium-ion battery", "hazard": "high"},
+        "lithium-polymer": {"name": "Lithium-polymer battery", "hazard": "high"}
+      },
+      "other_materials": [
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "Glass / display panel", "hazard": "medium"},
+        {"name": "Aluminum / metal frame", "hazard": "low"},
+        {"name": "Trace precious metals (gold, silver)", "hazard": "low"}
+      ]
+    },
+    "Laptop": {
+      "battery_material_default": {"name": "Lithium-ion battery", "hazard": "high"},
+      "battery_type_overrides": {
+        "lithium-ion": {"name": "Lithium-ion battery", "hazard": "high"},
+        "lithium-polymer": {"name": "Lithium-polymer battery", "hazard": "high"}
+      },
+      "other_materials": [
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "LCD display panel", "hazard": "medium"},
+        {"name": "Aluminum / metal chassis", "hazard": "low"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "Charger": {
+      "other_materials": [
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "Copper wiring", "hazard": "low"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "Cable": {
+      "other_materials": [
+        {"name": "Copper wiring", "hazard": "low"},
+        {"name": "Plastic / PVC insulation", "hazard": "low"}
+      ]
+    },
+    "PCB": {
+      "other_materials": [
+        {"name": "Circuit board substrate", "hazard": "medium"},
+        {"name": "Copper traces", "hazard": "low"},
+        {"name": "Soldered components", "hazard": "medium"},
+        {"name": "Trace precious metals (gold, silver)", "hazard": "low"}
+      ]
+    },
+    "Monitor": {
+      "other_materials": [
+        {"name": "Display panel (LCD/LED)", "hazard": "medium"},
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "Metal frame", "hazard": "low"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "TV": {
+      "other_materials": [
+        {"name": "Display panel (LCD/LED/OLED)", "hazard": "medium"},
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "Metal frame", "hazard": "low"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "Printer": {
+      "other_materials": [
+        {"name": "Circuit board (PCB)", "hazard": "medium"},
+        {"name": "Ink / toner residue", "hazard": "medium"},
+        {"name": "Metal components", "hazard": "low"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "Component": {
+      "other_materials": [
+        {"name": "Circuit board / chip substrate", "hazard": "medium"},
+        {"name": "Aluminum heatsink", "hazard": "low"},
+        {"name": "Trace precious metals (gold, silver)", "hazard": "low"}
+      ]
+    },
+    "Small Appliance": {
+      "other_materials": [
+        {"name": "Circuit board (PCB)", "hazard": "low"},
+        {"name": "Copper motor windings", "hazard": "low"},
+        {"name": "Metal components", "hazard": "low"},
+        {"name": "Plastic housing", "hazard": "low"}
+      ]
+    },
+    "Packaging": {
+      "other_materials": [
+        {"name": "Cardboard", "hazard": "low"},
+        {"name": "Plastic / styrofoam", "hazard": "low"}
+      ]
+    },
+    "Battery": {
+      "battery_material_default": {"name": "Battery cell (chemistry not confirmed by label)", "hazard": "unknown"},
+      "battery_type_overrides": {
+        "lithium-ion": {"name": "Lithium-ion battery", "hazard": "high"},
+        "lithium-polymer": {"name": "Lithium-polymer battery", "hazard": "high"},
+        "nimh": {"name": "Nickel-metal hydride battery", "hazard": "medium"},
+        "nicd": {"name": "Nickel-cadmium battery", "hazard": "high"},
+        "lead-acid": {"name": "Lead-acid battery", "hazard": "high"},
+        "alkaline": {"name": "Alkaline battery", "hazard": "low"}
+      },
+      "other_materials": [
+        {"name": "Metal casing", "hazard": "low"}
+      ]
+    }
+  }
+}

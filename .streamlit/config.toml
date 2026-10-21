@@ -1,0 +1,11 @@
+[server]
+# Matches the backend's 5 MB limit so the uploader's own hint is accurate
+# and oversized files are refused client-side before any request is made.
+maxUploadSize = 5
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#0f766e"

@@ -1,0 +1,86 @@
+{
+  "_priority_order": [
+    "Power Bank",
+    "Phone",
+    "Laptop",
+    "Charger",
+    "Cable",
+    "PCB",
+    "Monitor",
+    "TV",
+    "Printer",
+    "Component",
+    "Small Appliance",
+    "Packaging",
+    "Battery"
+  ],
+  "_priority_order_note": "Checked in this order. More distinctive/specific categories come first so, e.g., a power bank that also mentions 'li-ion' on its label matches Power Bank, not the generic Battery bucket. Battery is deliberately last — it's the catch-all for a loose/standalone battery label.",
+
+  "categories": {
+    "Power Bank": {
+      "item_name": "Power Bank",
+      "category_label": "Battery Electronics",
+      "keywords": ["power bank", "powerbank", "portable charger", "portable power", "power pack", "mobile power supply"]
+    },
+    "Phone": {
+      "item_name": "Phone",
+      "category_label": "Mobile Device",
+      "keywords": ["smartphone", "iphone", "android phone", "cellular phone", "mobile phone", "imei"]
+    },
+    "Laptop": {
+      "item_name": "Laptop",
+      "category_label": "Computing Device",
+      "keywords": ["laptop", "notebook computer", "macbook", "chromebook", "ultrabook"]
+    },
+    "Charger": {
+      "item_name": "Charger / Adapter",
+      "category_label": "Power Equipment",
+      "keywords": ["charger", "power adapter", "ac adapter", "wall charger", "power supply unit", "travel adapter"]
+    },
+    "Cable": {
+      "item_name": "Cable",
+      "category_label": "Cabling",
+      "keywords": ["usb cable", "hdmi cable", "ethernet cable", "charging cable", "data cable", "lightning cable"]
+    },
+    "PCB": {
+      "item_name": "Circuit Board",
+      "category_label": "Electronic Component",
+      "keywords": ["circuit board", "printed circuit board", "motherboard", "pcb"]
+    },
+    "Monitor": {
+      "item_name": "Monitor",
+      "category_label": "Display Device",
+      "keywords": ["lcd monitor", "led monitor", "computer monitor", "display panel"]
+    },
+    "TV": {
+      "item_name": "Television",
+      "category_label": "Display Device",
+      "keywords": ["television", "smart tv", "led tv", "oled tv", "plasma tv"]
+    },
+    "Printer": {
+      "item_name": "Printer",
+      "category_label": "Office Equipment",
+      "keywords": ["printer", "inkjet printer", "laser printer", "toner cartridge", "ink cartridge"]
+    },
+    "Component": {
+      "item_name": "Computer Component",
+      "category_label": "Electronic Component",
+      "keywords": ["memory module", "ram module", "processor", "graphics card", "hard drive", "solid state drive", "ssd"]
+    },
+    "Small Appliance": {
+      "item_name": "Small Appliance",
+      "category_label": "Household Electronics",
+      "keywords": ["hair dryer", "blender", "electric kettle", "electric shaver", "toaster", "coffee maker"]
+    },
+    "Packaging": {
+      "item_name": "Packaging",
+      "category_label": "General Recyclable",
+      "keywords": ["packaging", "cardboard box", "shipping box", "styrofoam"]
+    },
+    "Battery": {
+      "item_name": "Battery",
+      "category_label": "Battery Electronics",
+      "keywords": ["battery", "rechargeable battery", "aa battery", "aaa battery", "coin cell", "cr2032", "9v battery"]
+    }
+  }
+}

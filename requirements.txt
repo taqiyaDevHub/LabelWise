@@ -1,0 +1,15 @@
+# Single-app deploy (Streamlit Community Cloud) installs from this file, so
+# it lists everything explicitly. backend/ and frontend/ each also carry
+# their own requirements.txt for two-service deployments.
+streamlit>=1.40
+requests>=2.31
+Pillow>=10.4
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.9
+pytesseract>=0.3.13
+anthropic>=1.5
+google-genai>=1.0
+pytest>=8.3
+httpx>=0.27

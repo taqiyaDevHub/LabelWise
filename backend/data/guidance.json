@@ -1,0 +1,56 @@
+{
+  "_note": "'What should I do now?' steps, keyed by schemas.DisposalCategory. damage_steps always win when damage_detected is true (PRD v1.1 §2.8: Safety > Disposal > Recovery). Enforced in guidance_engine.py, not here.",
+
+  "damage_steps": [
+    "Do NOT puncture, compress, crush, or bend the item",
+    "Do NOT open, disassemble, or attempt repair",
+    "Do NOT charge it or connect it to power",
+    "Move it away from heat, flames, and flammable materials — ideally onto a non-flammable surface outdoors",
+    "Place it in sand or a metal container if it is warm, smoking, or hissing",
+    "Contact a hazardous-waste or e-waste service immediately — do not put it in any bin"
+  ],
+
+  "by_disposal_category": {
+    "battery_recycling": [
+      "Do not place in regular household trash — batteries can start fires in garbage trucks",
+      "Tape the terminals (clear tape over each end / connector) to prevent short circuits",
+      "Store in a cool, dry place away from metal objects until you drop it off",
+      "Take it to a battery recycling drop-off point (many electronics stores and supermarkets have one)"
+    ],
+    "e_waste": [
+      "Do not place in regular household trash",
+      "Back up and wipe any personal data before handing it over (factory reset, remove SIM/SD cards)",
+      "Remove any detachable battery and recycle it separately as a battery",
+      "Check whether the manufacturer or retailer runs a take-back or trade-in program",
+      "Otherwise take it to an e-waste collection facility"
+    ],
+    "hazardous_waste": [
+      "Do not place in regular household trash",
+      "Do not puncture, crush, or open the item",
+      "Keep it away from heat, water, and other chemicals",
+      "Contact your local hazardous-waste disposal service for pickup or drop-off"
+    ],
+    "specialized_recycling": [
+      "Do not place in regular household trash",
+      "Keep the board/component intact — recyclers recover precious metals from it",
+      "Take it to a specialized e-waste recycler that accepts components",
+      "If it holds data (drive, SSD), wipe or physically destroy the storage first"
+    ],
+    "general_recyclable": [
+      "Remove any electronics, batteries, or plastic film first",
+      "Flatten or clean it if needed",
+      "Place in your regular recycling bin if your local program accepts this material",
+      "Check local recycling guidelines for specific rules"
+    ],
+    "reuse_refurbishment": [
+      "Test whether the device still works",
+      "Consider donating, selling, or giving it away",
+      "Look into repair options before recycling"
+    ],
+    "unknown": [
+      "Do not place in regular household trash",
+      "Check the item for any labels, markings, or a model number and try another photo",
+      "Search for local e-waste drop-off options and ask them what they accept"
+    ]
+  }
+}
